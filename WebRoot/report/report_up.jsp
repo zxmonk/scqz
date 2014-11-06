@@ -25,7 +25,7 @@
 			  return false;
 		}
 	}
-</script>
+</script> 
 
 <title>四川前兆</title>
 <link rel="shortcut icon" type="image/x-icon"
@@ -33,7 +33,7 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 <body>
-
+   
 	<%
 		String result2 = null;
 		result2 = (String) request.getSession().getAttribute(

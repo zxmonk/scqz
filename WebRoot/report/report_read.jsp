@@ -3,20 +3,9 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
+<%@ include file="/includeFile/header.jsp"%> 
 
-<%@ page import="dao.*"%>
-<%@ page import="java.util.*"%>
-<%@ page import="java.text.*"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script language="javascript" type="text/javascript"
-	src="/scqz/My97DatePicker/WdatePicker.js"></script>
-<script src="/scqz/report/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/jquery-1.7.js"></script>
-<script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
-<script type="text/javascript">
+  <script type="text/javascript">
 	$(function() {
 		$("#checkAll").click(function() {
 			$('input[name="subBox"]').attr("checked", this.checked);
@@ -31,33 +20,7 @@
 											: false);
 				});
 	});
-</script>
-
-
-<title>四川前兆</title>
-<link rel="shortcut icon" type="image/x-icon"
-	href="../images/shortcut.png" />
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-</head>
-<body>
-	<div id="leftcont">
-		<div id="leftimg">
-			<a title="首页" href="index.html"><img alt="image description"
-				src="../images/logo2.png" /></a>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a title="首页" href="/scqz/index.html">首页</a></li>
-				<li><a title="月报年报" href="/scqz/report/report_read.jsp">月报年报</a></li>
-				<li><a title="质量监控" href="/scqz/index.html">质量监控</a></li>
-				<li><a title="运行评价" href="/scqz/review/excel_read.jsp">运行评价</a></li>
-				<li><a title="运行管理" href="/scqz/index.html">运行管理</a></li>
-
-			</ul>
-		</div>
-	</div>
-
-   
+</script> 
 
 	<div id="main">
 		<h1>前兆台网运行报告查询</h1>
@@ -565,7 +528,5 @@
 
 
 
-	</div>
-
-</body>
-</html>
+	
+<%@ include file="/includeFile/footer.jsp"%> 

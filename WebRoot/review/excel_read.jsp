@@ -3,18 +3,7 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
-<%@ page import="dao.*"%>
-<%@ page import="java.util.*"%>
-<%@ page import="java.text.*"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script language="javascript" type="text/javascript"
-	src="/scqz/My97DatePicker/WdatePicker.js"></script>
-
-<script src="/scqz/report/jquery-1.4.4.min.js" type="text/javascript"></script>
-
+<%@ include file="/includeFile/header.jsp"%> 
 <script type="text/javascript">
 	$(function() {
 		$("#checkAll").click(function() {
@@ -45,35 +34,11 @@
         }
 }
 </script>
-<title>四川前兆</title>
-<link rel="shortcut icon" type="image/x-icon"
-	href="../images/shortcut.png" />
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-</head>
-<body>
-
-	<div id="leftcont">
-		<div id="leftimg">
-			<a title="首页" href="index.html"><img alt="image description"
-				src="../images/logo2.png" /></a>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a title="首页" href="/scqz/index.html">首页</a></li>
-				<li><a title="月报年报" href="/scqz/report/report_read.jsp">月报年报</a></li>
-				<li><a title="质量监控" href="/scqz/index.html">质量监控</a></li>
-				<li><a title="运行评价" href="/scqz/review/excel_read.jsp">运行评价</a></li>
-				<li><a title="运行管理" href="/scqz/index.html">运行管理</a></li>
-
-			</ul>
-		</div>
-	</div>
-
 	<div id="main">
-		<h1>前兆台网运行质量评价</h1>
+		<h1>前兆台网运行质量</h1>
 		<input type="button" value="评价提交界面" onclick="toEx();" />
 		
-		<p class="tag">本页面提供前兆运行评价查询功能</p>
+		<p class="tag">本页面提供前兆运行质量查询功能</p>
 		<p class="tag2">
 			*文件格式为excel2007格式，安装excel2003版本的电脑请升级office或安装兼容包，兼容包下载见四川前兆群 <br />*点击查询结果的左侧方框可选择下载打包的文件
 		</p>
@@ -251,6 +216,4 @@
 		%>
 
 
-	</div>
-</body>
-</html>
+<%@ include file="/includeFile/footer.jsp"%> 

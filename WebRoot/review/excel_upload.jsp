@@ -39,7 +39,7 @@
 		<lable>选择日期</lable>
 		<input type=text name="date" onClick="WdatePicker()" /> <br /> <label>选择文件</label>
 		<input type="file" name="file" /> <br /> <input type="submit"
-			value="submit" onclick="toEx();"/>
+			value="提交" />
 	</form>
 </body>
 </html>

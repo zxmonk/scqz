@@ -3,15 +3,9 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
-<%@ page import="java.util.*"%>
-<%@ page import="java.text.*"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script language="javascript" type="text/javascript"
-	src="/scqz/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript">
+<%@ include file="/includeFile/header.jsp"%> 
+	
+	<script type="text/javascript">
 	function check(){
 		if(document.getElementById('fileUpload').value=='') {
 			  alert('请选择上传文件！');
@@ -26,44 +20,9 @@
 		}
 	}
 </script> 
-
-<title>四川前兆</title>
-<link rel="shortcut icon" type="image/x-icon"
-	href="../images/shortcut.png" />
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-</head>
-<body>
-   
-	<%
-		String result2 = null;
-		result2 = (String) request.getSession().getAttribute(
-				"result2");
-		request.getSession().removeAttribute("result2");
-		
-		if(result2!=null){
-			out.println("<script> alert(\"提交成功!\"); </script>");
-			result2 = null;
-		}
-	%>
-	<div id="leftcont">
-		<div id="leftimg">
-			<a title="首页" href="index.html"><img alt="image description"
-				src="../images/logo2.png" /></a>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a title="首页" href="/scqz/index.html">首页</a></li>
-				<li><a title="月报年报" href="/scqz/report/report_read.jsp">月报年报</a></li>
-				<li><a title="质量监控" href="/scqz/index.html">质量监控</a></li>
-				<li><a title="运行评价" href="/scqz/review/excel_read.jsp">运行评价</a></li>
-				<li><a title="运行管理" href="/scqz/index.html">运行管理</a></li>
-
-			</ul>
-		</div>
-	</div>
 	<div id="main">
 		<h1>前兆台网运行报告提交</h1>
-		<a title="点击进入报告提交页面" href="/scqz/report/report_read.jsp">报告查询</a>
+		<a title="点击进入报告查询页面" href="/scqz/report/report_read.jsp">报告查询</a>
 		<p class="tag">本页面提供前兆运行月报和前兆运行年报的提交服务，点击上方的“报告查询”进入提交报告页面</p>
 		<p class="tag2">
 		*请注意在选择日期时，请选择报告内容日期，而不是报告提交日期
@@ -160,23 +119,17 @@
 			<%
 				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 			%>
-			<lable>选择日期（必填）</lable>
+			<label>选择时间（必填）</label>
 			<input type=text name="date" onClick="WdatePicker()" value="<%out.print(formatter.format(new Date())); %>"/> 
 			<br /> 
 			<label>选择文件（必填）</label>
 			<input type="file" name="file" id="fileUpload"/>
 			
-			 <br />
+			<br/>
 
-			<lable>上传人员（必填）</lable>
+			<label>上传人员（必填）</label>
 			<input type=text name="upname" value=" " id="nameUpload"/> <br /> <input type="submit"
 				value="提交" />
 
 		</form>
-
-
-
-
-	</div>
-</body>
-</html>
+<%@ include file="/includeFile/footer.jsp"%> 

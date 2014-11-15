@@ -13,6 +13,8 @@ body {
 	font-size: 12px;
 	color: #444;
 	line-height: 200%;
+	-moz-user-select:none;
+ 	hutia:expression(this.onselectstart=function(){return(false)});
 }
 
 body>#leftcont {
@@ -122,21 +124,24 @@ a:hover {
 	margin-left: 190px;
 	padding: 30px;
 	background: #fff;
+	min-height:800px;
+    _height:800px;
 }
 
 
 
 #main p {
 	margin: 0 0 15px;
-	font-family: 微软雅黑
+	font-family: 微软雅黑;
 }
 
 #main p.tag {
 	margin: 35px 0;
 	font-size: 20px;
-	font-style: italic;
+	/*font-style: italic;*/
 	line-height: 30px;
 	color: #666;
+	font-family: 楷体;
 }
 #main p.tag2 {
 	margin: 35px 0;
@@ -144,6 +149,11 @@ a:hover {
 	
 	line-height: 30px;
 	color: #000;
+}
+
+#main p.tag3 {
+	
+	color: #fff;
 }
 
 #main h1,h2,h3,h4,h5 {
@@ -159,7 +169,8 @@ a:hover {
 	margin: 0 0 25px;
 	font-style: normal;
 	text-decoration: none;
-	font-weight: bolder;
+	/*font-weight: bolder;*/
+	font-family: 方正瘦金书简体;
 }
 
 
@@ -280,6 +291,16 @@ a.photo:hover img {
 	padding: 15px 0;
 	font-size: 10px;
 	text-align: right;
+	
+}
+
+#footer2{
+	 
+	left:30px;
+ 	position: fixed !important;
+ 	bottom: 0px;
+ 	_position: absolute;
+ 	_top: expression_r(eval_r(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight));
 }
 
 #footer p {

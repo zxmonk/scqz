@@ -23,19 +23,37 @@
 
 </head>
 <body>
+
+
+
+
+
 	<div id="leftcont">
 		<div id="leftimg">
-			<a title="首页" href="/scqz/index.html"><img alt="image description"
+			<a title="首页" href="/scqz/index.jsp"><img alt="image description"
 				src="/scqz/images/logo2.png" /></a>
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a title="首页" href="/scqz/index.html">首页</a></li>
+				<li><a title="首页" href="/scqz/index.jsp">首页</a></li>
 				<li><a title="月报年报" href="/scqz/report/report_read.jsp">月报年报</a></li>
 				<li><a title="质量监控" href="/scqz/feedback/feedback.jsp">质量监控</a></li>
 				<li><a title="运行评价" href="/scqz/review/excel_read.jsp">运行评价</a></li>
-				<li><a title="运行管理" href="/scqz/index.html">运行管理</a></li>
+				<li><a title="运行管理" href="/scqz/admin/index.jsp">运行管理</a></li>
 
 			</ul>
 		</div>
+		
+		<div id="footer2">
+		
+		Copyright ©
+					<% 
+			String datetime=new SimpleDateFormat("yyyy").format(Calendar.getInstance().getTime()); 
+			out.print(datetime);//获取系统时间 
+					%>&nbsp;
+					<br/>四川地震前兆台网
+	    </div>
+		
+		
+		
 	</div>

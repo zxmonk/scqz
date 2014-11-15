@@ -3,9 +3,8 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
-<div id="footer">
-		Copyright © 2014&nbsp;四川前兆台网
-	</div>
+
+
 
 </div>
 

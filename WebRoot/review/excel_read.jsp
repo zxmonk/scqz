@@ -120,9 +120,9 @@
 				if (reviewType.equals("MR")) {
 
 					try {
-						List<ReviewMonthlyFile> result = (List<ReviewMonthlyFile>) request
-								.getSession().getAttribute("result");
-						if (result.isEmpty()) {
+						List<ReviewMonthlyFile> result1 = (List<ReviewMonthlyFile>) request
+								.getSession().getAttribute("result1");
+						if (result1.isEmpty()) {
 							out.println("<p>" + "月评" + dateStartString + " ~ "
 									+ dateEndString + " 查询结果为空</p>");
 						} else {
@@ -139,7 +139,7 @@
 
 									+ "</tr>");
 
-							for (ReviewMonthlyFile o : result) {
+							for (ReviewMonthlyFile o : result1) {
 								out.println("<tr><td><input name=\"subBox\" type=\"checkbox\" value=\""
 										+ o.getFileName()
 										+ "\"/></td><td>"
@@ -168,9 +168,9 @@
 				if (reviewType.equals("AR")) {
 
 					try {
-						List<ReviewAnnualFile> result = (List<ReviewAnnualFile>) request
-								.getSession().getAttribute("result");
-						if (result.isEmpty()) {
+						List<ReviewAnnualFile> result1 = (List<ReviewAnnualFile>) request
+								.getSession().getAttribute("result1");
+						if (result1.isEmpty()) {
 							out.println("<p>" + "年评" + dateStartString + " ~ "
 									+ dateEndString + " 查询结果为空</p>");
 						} else {
@@ -187,7 +187,7 @@
 
 									+ "</tr>");
 
-							for (ReviewAnnualFile o : result) {
+							for (ReviewAnnualFile o : result1) {
 								out.println("<tr><td><input name=\"subBox\" type=\"checkbox\" value=\""
 										+ o.getFileName()
 										+ "\"/></td><td>"
@@ -203,6 +203,9 @@
 							out.println("</div>");
 							out.println("<input type=\"submit\" value=\"下载\" ></input>");
 							out.println("</form>");
+							
+							
+							
 						}
 					} catch (Exception ex) {
 

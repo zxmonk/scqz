@@ -456,6 +456,8 @@
 							out.println("</div>");
 							out.println("<input type=\"submit\" value=\"下载\" ></input>");
 							out.println("</form>");
+							
+							
 
 						}
 					} catch (Exception ex) {
@@ -512,6 +514,8 @@
 							out.println("</div>");
 							out.println("<input type=\"submit\" value=\"下载\" ></input>");
 							out.println("</form>");
+							
+							
 
 						}
 					} catch (Exception ex) {

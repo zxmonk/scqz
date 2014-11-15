@@ -118,7 +118,7 @@ public class ExcelFileReadServlet extends HttpServlet {
 				result = dao.findbyDateDateRange(dateStart, dateEnd);
 				dao.getSession().close();
 				
-				request.getSession().setAttribute("result", result);
+				request.getSession().setAttribute("result1", result);
 				request.getSession().setAttribute("dateStartString",dateStartString);
 				request.getSession().setAttribute("dateEndString",dateEndString);
 				request.getSession().setAttribute("reviewtype", reviewType);
@@ -139,7 +139,7 @@ public class ExcelFileReadServlet extends HttpServlet {
 				result = dao.findbyDateDateRange(dateStart, dateEnd);
 				dao.getSession().close();
 				
-				request.getSession().setAttribute("result", result);
+				request.getSession().setAttribute("result1", result);
 				request.getSession().setAttribute("dateStart",dateStart);
 				request.getSession().setAttribute("dateEnd",dateEnd);
 				request.getSession().setAttribute("reviewtype", reviewType);

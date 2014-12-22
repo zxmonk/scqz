@@ -307,3 +307,19 @@ a.photo:hover img {
 	margin: 0;
 	padding: 0;
 }
+
+#table_b{
+	
+}
+
+#table_b table {
+	border:0px;
+	width:800px;
+    border-collapse : collapse ;
+    text-align:center;
+}
+
+#table_b tr.tr1{
+	
+	background: #eeeeee;
+}

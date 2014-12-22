@@ -55,20 +55,29 @@ if (agent.indexOf("MSIE 6.0") != -1  || agent.indexOf("MSIE 7.0") != -1) {
 	out.println(agent);
 } */
     %>
-	<p class="tag">欢迎光临本站,本站主要面向四川区域地震前兆工作人员，提供前兆数据系统日常运行查询和维护相关功能的服务<br/>（首次登入报告和评价界面可能会很慢，请耐心等待）</p>
+	<p class="tag">欢迎光临本站,本站主要面向四川区域地震前兆工作人员，提供前兆数据系统日常运行查询和维护相关功能的服务<br/>
     
     
      <h2>快速导航</h2>      
      <div id="slider">
                <div class="gallery">
                         <ul>
-                            <li><a class="photo" target="_blank" href="admin/monitor.jsp"><img src="images/monitor.png" alt="empty" width="180" height="120" /></a></li>
-                            <!-- <li><a class="photo" href="images/IMG2.jpg"><img src="images/IMG2.jpg" alt="empty" width="180" height="120" /></a></li> -->
-                            <li><a class="photo" target="_blank" href="admin/reboot.jsp"><img src="images/reboot.png" alt="empty" width="180" height="120" /></a></li>
-                            <li><a class="photo" target="_blank" href="admin/overview.jsp"><img src="images/data_overview.png" alt="empty" width="180" height="120" /></a></li>
-                            <!-- <li><a class="photo" href="images/IMG5.jpg"><img src="images/IMG5.jpg" alt="empty" width="180" height="120" /></a></li>
-                            <li><a class="photo" href="images/IMG6.jpg"><img src="images/IMG6.jpg" alt="empty" width="180" height="120" /></a></li> -->
-                            <li><a class="photo" target="_blank" href="admin/overview_beijingchang.jsp"><img src="images/data_overview_beijingchang.png" alt="empty" width="180" height="120" /></a></li>
+                            <li><a class="photo" target="_blank" href="admin/monitor.jsp" title="服务器监控">
+                            	<img src="images/monitor.png" alt="服务器监控" width="180" height="120" /></a></li>
+                            
+                            <li><a class="photo" target="_blank" href="admin/overview.jsp" title="运行总览">
+                            	<img src="images/data_overview.png" alt="运行总览" width="180" height="120" /></a></li>
+                            
+                            <li><a class="photo" target="_blank" href="admin/overview_beijingchang.jsp" title="运行总览（背景场）">
+                            	<img src="images/data_overview_beijingchang.png" alt="运行总览（背景场）" width="180" height="120" /></a></li>
+                            	
+                            <li><a class="photo" target="_blank" href="admin/reboot.jsp" title="前兆管理系统重启">
+                            	<img src="images/reboot.png" alt="前兆管理系统重启" width="180" height="120" /></a></li>
+                            
+                            <li><a class="photo" target="_blank" href="report/report_up.jsp" title="报告提交">
+                            	<img src="images/report_up.png" alt="报告提交" width="180" height="120" /></a></li>
+                            	
+                            
                             
                         </ul>
                 </div> 
@@ -85,9 +94,9 @@ if (agent.indexOf("MSIE 6.0") != -1  || agent.indexOf("MSIE 7.0") != -1) {
           <br/>
 	<h2>本站功能介绍</h2>
 	<p>月报年报：前兆台网运行月报和年报的提交，查询和下载</p>
-		<p>运行报告模块，提供最新的运行月报和年报的大纲下载功能以及具有固定格式的报告提交与查询功能以及学科质量监控与反馈报告功能</p>
-          <p>运行评价模块，用于公示前兆监测台站的台网运行月评和年评成绩</p>
-          <p>运行管理模块，监控各节点和区域中心服务器的基本工作状态和提供基础的中国地震前兆台网数据管理系统的远程控制功能</p>
+		<p>质量评价：学科质量监控与反馈</p>
+          <p>运行评价：用于公示前兆监测台站的台网运行月评和年评情况</p>
+          <p>运行管理：监控各节点和区域中心服务器的基本工作状态以及数据库的远程控制</p>
           <br/>
           <br/>
           <div class="row">
@@ -118,6 +127,6 @@ if (agent.indexOf("MSIE 6.0") != -1  || agent.indexOf("MSIE 7.0") != -1) {
  
        
 	
-
+</div>
 	
 	<%@ include file="/includeFile/footer.jsp"%>

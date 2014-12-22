@@ -129,8 +129,8 @@ public class ExcelFileDownloadServlet extends HttpServlet {
 
 				fileName = fileNames[i];
 				result = dao.findById(fileName);
-				fn = Save_Location + File.separatorChar + fileName + ".xlsx";
-				zipOut.putNextEntry(new ZipEntry(fileName + ".xlsx"));
+				fn = Save_Location + File.separatorChar + fileName + ".xls";
+				zipOut.putNextEntry(new ZipEntry(fileName + ".xls"));
 				zipOut.write(result.getFileBlob());
 			}
 
@@ -154,8 +154,8 @@ public class ExcelFileDownloadServlet extends HttpServlet {
 
 				fileName = fileNames[i];
 				result = dao.findById(fileName);
-				fn = Save_Location + File.separatorChar + fileName + ".xlsx";
-				zipOut.putNextEntry(new ZipEntry(fileName + ".xlsx"));
+				fn = Save_Location + File.separatorChar + fileName + ".xls";
+				zipOut.putNextEntry(new ZipEntry(fileName + ".xls"));
 				zipOut.write(result.getFileBlob());
 			}
 

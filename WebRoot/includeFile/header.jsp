@@ -24,7 +24,7 @@
 </head>
 <body>
 
-
+   
 
 
 
@@ -45,7 +45,7 @@
 		</div>
 		
 		<div id="footer2">
-		
+		IE用户尽量使用8.0及以上版本<br/>
 		Copyright ©
 					<% 
 			String datetime=new SimpleDateFormat("yyyy").format(Calendar.getInstance().getTime()); 

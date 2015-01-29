@@ -30,7 +30,7 @@
 
 	<div id="leftcont">
 		<div id="leftimg">
-			<a title="首页" href="/scqz/index.jsp"><img alt="image description"
+			<a title="首页" href="/scqz/index.jsp"><img alt="四川前兆"
 				src="/scqz/images/logo2.png" /></a>
 		</div>
 		<div id="menu">
@@ -45,7 +45,7 @@
 		</div>
 		
 		<div id="footer2">
-		IE用户尽量使用8.0及以上版本<br/>
+		IE用户尽量使用8.0及以上版本<br/>其实不推荐IE内核浏览器<br/><br/>
 		Copyright ©
 					<% 
 			String datetime=new SimpleDateFormat("yyyy").format(Calendar.getInstance().getTime()); 

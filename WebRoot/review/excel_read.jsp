@@ -133,7 +133,7 @@
 						out.println("<tr><td></td>"
 								+ "<td><strong>文件名</strong></td>"
 
-								+ "<td><strong>报告日期（YYYY-MM）</strong></td>"
+								+ "<td><strong>月评日期（YYYY-MM）</strong></td>"
 
 								+ "</tr>");
 						int nn = 1;
@@ -144,7 +144,7 @@
 								out.println("<tr class=\"tr1\"><td><input name=\"subBox\" type=\"checkbox\" value=\""
 										+ o.getFileName()
 										+ "\"/></td><td>"
-										+ o.getFileName()
+										+"四川地震前兆台网仪器月运行评价(" +o.getFileName().substring(2,8)+")"
 										+ "</td><td>"
 										+ o.getDataDate().toString()
 												.substring(0, 7)
@@ -153,7 +153,7 @@
 								out.println("<tr><td><input name=\"subBox\" type=\"checkbox\" value=\""
 										+ o.getFileName()
 										+ "\"/></td><td>"
-										+ o.getFileName()
+										+"四川地震前兆台网仪器月运行评价(" +o.getFileName().substring(2,8)+")"
 										+ "</td><td>"
 										+ o.getDataDate().toString()
 												.substring(0, 7)
@@ -188,14 +188,14 @@
 					} else {
 
 						out.println("<form action=\"/scqz/review/ExcelFileDownload\" method=\"post\">");
-						out.println("<div>");
+						out.println("<div id=\"table_b\">");
 						out.println("<input id=\"checkAll\" type=\"checkbox\">全选</input>");
 
 						out.println("<table class=\"table_b\" >");
 						out.println("<tr><td></td>"
 								+ "<td><strong>文件名</strong></td>"
 
-								+ "<td><strong>报告日期（YYYY）</strong></td>"
+								+ "<td><strong>年评日期（YYYY）</strong></td>"
 
 								+ "</tr>");
 
@@ -207,7 +207,7 @@
 								out.println("<tr class=\"tr1\"><td ><input name=\"subBox\" type=\"checkbox\" value=\""
 										+ o.getFileName()
 										+ "\"/></td><td>"
-										+ o.getFileName()
+										+"四川地震前兆台网仪器年运行评价(" +o.getFileName().substring(2,6)+")"
 										+ "</td><td>"
 										+ o.getDataDate().toString()
 												.substring(0, 4)
@@ -216,7 +216,7 @@
 								out.println("<tr><td><input name=\"subBox\" type=\"checkbox\" value=\""
 										+ o.getFileName()
 										+ "\"/></td><td>"
-										+ o.getFileName()
+										+"四川地震前兆台网仪器年运行评价(" +o.getFileName().substring(2,6)+")"
 										+ "</td><td>"
 										+ o.getDataDate().toString()
 												.substring(0, 4)

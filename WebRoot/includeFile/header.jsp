@@ -45,7 +45,7 @@
 		</div>
 		
 		<div id="footer2">
-		IE用户尽量使用8.0及以上版本<br/>其实不推荐IE内核浏览器<br/><br/>
+		IE用户尽量使用9.0及以上版本<br/>其实不推荐IE内核浏览器<br/><br/>
 		Copyright ©
 					<% 
 			String datetime=new SimpleDateFormat("yyyy").format(Calendar.getInstance().getTime()); 

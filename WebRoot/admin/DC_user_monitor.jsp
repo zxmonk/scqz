@@ -18,6 +18,7 @@
 	<%
 		String result = ""; // 查询结果字符串
 		String sql = "SELECT user_id, TRUNC (logon_day) logon_day, SUM (elapsed_minutes) total_time  FROM sys.stats$user_log   GROUP BY user_id, TRUNC (logon_day) ORDER BY 2";
+		sql = "select * from sys.stats$user_log where logon_day > TO_DATE('03/02/2015 15:25:43', 'MM/DD/YYYY HH24:MI:SS') order by logon_day ";
 		String url = "jdbc:oracle:thin:@10.51.0.97:1521:PDBQZ";
 		String username = "QZDATA"; // 用户名
 		String password = "87014870"; //密码
@@ -27,8 +28,8 @@
 		Statement stmt = conn.createStatement();
 		ResultSet rs = stmt.executeQuery(sql);
 		while (rs.next()) {
-			result += "\n" + rs.getString(1) + " " + rs.getString(2) + " "
-					+ rs.getString(3) + "<BR>";
+			result += "\n" + rs.getString(1) + " " + rs.getString(4) + " "
+					+ rs.getString(8) + " "+ rs.getString(10)+ "<BR>";
 		}
 		rs.close(); // 关闭结果集
 		stmt.close(); // 关闭执行语句对象

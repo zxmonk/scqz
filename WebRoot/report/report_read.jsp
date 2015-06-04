@@ -26,6 +26,7 @@
 	<h1>前兆台网运行报告查询</h1>
 	<a title="点击进入报告提交页面" href="/scqz/report/report_up.jsp">报告提交</a>
 	<p class="tag">本页面提供前兆运行月报和前兆运行年报的查询服务，点击上方的“报告提交”进入提交报告页面</p>
+	<p><a title="点击下载年报月报编写大纲" href="report.rar">年报月报编写大纲</a>（*更新于2015年1月15日）</p>
 	<p class="tag2">*点击查询结果的左侧方框可选择下载打包的报告文件</p>
 	<%
 		String reportType = null;
